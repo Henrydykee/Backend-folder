@@ -21,7 +21,7 @@ server.listen(5000, () => {
     console.log('Server running on http://localhost:5000/');
 });
 
-const MONGO_URL = 'mongodb+srv://admin:chinny_cc12345@atlascluster.bzpzarz.mongodb.net/?retryWrites=true&w=majority';
+const MONGO_URL = 'mongodb+srv://admin:******@atlascluster.bzpzarz.mongodb.net/?retryWrites=true&w=majority';
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
 mongoose.connection.on('error', (error: Error) => console.log(error));
